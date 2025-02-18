@@ -236,4 +236,7 @@ h4{
     .image img {
         width: 250px;
     }
+    h1{
+        font-size: 28px;
+    }
 }
