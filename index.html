@@ -5,54 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecangrafical | Agência de Publicidade e Marketing Digital localizada em Luanda, Angola</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <div class="header">   
-        
-        <div class="navbar">
-            <div class="nav--logo">
-                <a href="/index.html">
-                    <img src="/img/tecangrafical--logo.png" alt="Tecangrafical">
-                </a>
-            </div><!--nav--logo-->
+    <header>
 
-            <div class="nav--menu">
-                <ul>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Projectos</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </div><!--nav--menu-->
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="/index.html"><img src="./assets/img/tecangrafical--logo.png" alt="Tecangrafical">
+            </a></div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="" class="nav__link"><span>Quem Somos</span></a></li>
+                <li><a href="" class="nav__link"><span>Serviços</span></a></li>
+                <li><a href="" class="nav__link"><span>Porfólio</span></a></li>
+                <li><a href="" class="nav__link"><span>Blog</span></a></li>
+            </ul>
 
             <div class="nav--btn">
                 <button id="btn">Contactar</button>
             </div><!--nav--btn-->
+        </nav>
+    </header>
 
-        </div><!--navbar-->
-
-    </div><!--header-->
 
     <div class="hero">
         <div class="text-content">
             <h3>Agência Criativa</h3>
-            <h1>Melhoramos a <span class="highlight">Imagem</span>
-                da sua Empresa</h1>
+            <h1>Trazemos a Melhor <span class="highlight">Imagem</span>
+                Para sua Empresa</h1>
             <p>
-             Tecangrafical traz uma nova visão de identidade corporativa e comunicação visual, 
-                unindo habilidades de negócio e criatividade, focando no design estético e na 
-                praticidade quantitativa.
+                Tecangrafical traz uma nova visão de identidade corporativa e 
+                comunicação visual, ligando negócio e criatividade, 
+                focando no design estético com qualidade.
             </p>
-            <button id="btn--visita">Agendar Visita</button>
-        </div><!--box-->
+            <button id="btn">Agendar Visita</button>
+        </div><!--text-content-->
     
         <div class="image">
-            <img src="/img/atenas--image.png" alt="Lady Justice">
+            <img src="./assets/img/atenas--image.png" alt="Lady Justice">
         </div><!--image-->
     
-    </div><!--container-->
+    </div><!--hero-->
 
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+            menuToggle.innerHTML = menu.classList.contains('show') 
+                ? '<i class="ri-menu-3-line"></i>' 
+                : '<i class="ri-close-line"></i>';
+        });
+    </script>
+
+    <div class="clients">
+        <div class="logos__slide">
+            <img src="./assets/img/clients/chindeca--logo.png" alt="">
+            <img src="./assets/img/clients/govao--logo.png" alt="">
+            <img src="./assets/img/clients/protteja--logo.png" alt="">
+            <img src="./assets/img/clients/semearsorriso--logo.png" alt="">
+            <img src="./assets/img/clients/sonangol--logo.png" alt="">
+            <img src="./assets/img/clients/sonaturais--logo.png" alt="">
+            <img src="./assets/img/clients/WB--logo.png" alt="">
+            <img src="./assets/img/clients/wbs--logo.png" alt="">
+        </div><!--logo-slide-->
+        
+        <div class="logos__slide">
+            <img src="./assets/img/clients/chindeca--logo.png" alt="">
+            <img src="./assets/img/clients/govao--logo.png" alt="">
+            <img src="./assets/img/clients/protteja--logo.png" alt="">
+            <img src="./assets/img/clients/semearsorriso--logo.png" alt="">
+            <img src="./assets/img/clients/sonangol--logo.png" alt="">
+            <img src="./assets/img/clients/sonaturais--logo.png" alt="">
+            <img src="./assets/img/clients/WB--logo.png" alt="">
+            <img src="./assets/img/clients/wbs--logo.png" alt="">
+        </div><!--logo-slide-->
+    </div><!--logo-->
+
+    <footer>
+        <div class="footer-container">
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button>➜</button>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/tecangrafical"><i class="ri-facebook-box-line"></i></i></a>
+                <a href="https://www.instagram.com/tecangrafical"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/company/tecangrafical"><i class="ri-linkedin-box-line"></i></i></a>
+            </div>
+        
+            <ul class="footer-links">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+        <p class="copyright">Tecangrafical © 2025. Todos Direitos Reservados.</p>
+    </div>
+    </footer>
 
 </body>
 </html>
