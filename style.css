@@ -315,6 +315,20 @@ footer {
 
 /* Responsividade */
 
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 300px;
+    }
+}
 
 @media (max-width: 768px) {
 
