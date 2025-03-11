@@ -318,6 +318,24 @@ footer {
 
 @media (max-width: 768px) {
 
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 30px 5%;
+    }
+
     .hero {
         padding: 30px 5%;
     }
@@ -376,10 +394,3 @@ footer {
 
 }
 
-@media (max-width: 665px) {
-    .text-content h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
