@@ -249,7 +249,7 @@ body {
 /*==Footer==*/
 
 footer {
-    background: var(--primary-bg);
+    background: var(--fifth--color);
     padding: 20px;
     text-align: center;
 }
@@ -276,7 +276,7 @@ footer {
 
 .newsletter button {
     padding: 10px;
-    background: #ddd;
+    background: var(--third-bg);
     border: 1px solid #ccc;
     border-left: none;
     cursor: pointer;
@@ -302,9 +302,13 @@ footer {
 
 .social-icons a {
     text-decoration: none;
-    color: #555;
+    color: var(--sixth--color);
     font-size: 20px;
     margin: 0 10px;
+}
+.social-icons a:hover{
+    color: var(--third-bg);
+    transition: transform .5s ease-in-out;
 }
 
 .copyright {
@@ -312,7 +316,6 @@ footer {
     font-size: 14px;
     margin-top: 10px;
 }
-
 
 /* Responsividade */
 
