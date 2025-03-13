@@ -372,7 +372,7 @@ footer {
         font-size: 1rem;
     }
 
-    header .menu {
+    .menu {
         display: none;
         flex-direction: column;
         position: relative;
