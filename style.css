@@ -372,11 +372,11 @@ footer {
         font-size: 1rem;
     }
 
-    .navbar {
+    header .menu {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 50px;
+        position: relative;
+        top: 40px;
         left: 0;
         width: 100%;
         background: var(--primary-bg);
