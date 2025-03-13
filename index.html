@@ -22,9 +22,9 @@
             </a></div>
 
             <div class="menu-toggle" id="menu-toggle">
-                <i class="ri-menu-3-line"></i>
+                <i class="ri-menu-3-line" id="toggle"></i>
             </div>
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a href="" class="nav__link"><span>Quem Somos</span></a></li>
                 <li><a href="" class="nav__link"><span>Serviços</span></a></li>
                 <li><a href="" class="nav__link"><span>Porfólio</span></a></li>
@@ -40,7 +40,7 @@
             const icon = menuToggle.querySelector("i");
             
             menuToggle.addEventListener("click", function() {
-                if (menu.display === "flex") {
+                if (menu.style.display === "flex") {
                     menu.style.display = "none";
                     icon.classList.remove("ri-close-large");
                     icon.classList.add("ri-menu-3-line");
