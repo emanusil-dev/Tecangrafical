@@ -32,6 +32,26 @@
                 <li><a href="#" id="btn">Contactos</a></li>
             </ul>
         </nav>
+
+            <script>
+   document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.getElementById("menu-toggle");
+            const menu = document.getElementById("menu");
+            const icon = menuToggle.querySelector("i");
+            
+            menuToggle.addEventListener("click", function() {
+                if (menu.style.display === "flex") {
+                    menu.style.display = "none";
+                    icon.classList.remove("ri-close-large");
+                    icon.classList.add("ri-menu-3-line");
+                } else {
+                    menu.style.display = "flex";
+                    icon.classList.remove("ri-menu-3-line");
+                    icon.classList.add("ri-close-large");
+                }
+            });
+        });
+    </script>
     </header>
 
 
@@ -54,25 +74,7 @@
     
     </div><!--hero-->
 
-    <script>
-   document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.getElementById("menu-toggle");
-            const menu = document.getElementById("menu");
-            const icon = menuToggle.querySelector("i");
-            
-            menuToggle.addEventListener("click", function() {
-                if (menu.style.display === "flex") {
-                    menu.style.display = "none";
-                    icon.classList.remove("fa-times");
-                    icon.classList.add("fa-bars");
-                } else {
-                    menu.style.display = "flex";
-                    icon.classList.remove("fa-bars");
-                    icon.classList.add("fa-times");
-                }
-            });
-        });
-    </script>
+
 
     <div class="clients">
         <div class="logos__slide">
