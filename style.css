@@ -372,7 +372,7 @@ footer {
         font-size: 1rem;
     }
 
-    .menu {
+    .navbar {
         display: none;
         flex-direction: column;
         position: absolute;
