@@ -215,7 +215,7 @@ body {
 /*=====GALLERY====*/
 
 
-body {
+.gallery {
 	font-family: Lato, sans-serif;
 	margin: 0;
 	padding: 1rem;
@@ -226,7 +226,7 @@ body {
 	background: rgba(20, 20, 20, 1);
 }
 
-img {
+.gallery img {
 	width: 100%;
 	display: block;
 	aspect-ratio: 1 / 1;
@@ -234,7 +234,7 @@ img {
 	transition: transform 1000ms;
 }
 
-ul {
+.gallery ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
