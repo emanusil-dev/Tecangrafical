@@ -489,6 +489,9 @@ footer {
     .nav-links, .footer-links {
         flex-direction: column;
     }
+	faqs{
+		display: grid;
+	}
 
 }
 
