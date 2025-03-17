@@ -3,13 +3,15 @@
 @import url(./assets/css/partials/index/hero.css);
 @import url(./assets/css/partials/index/clients.css);
 @import url(./assets/css/partials/index/status.css);
+@import url(./assets/css/partials/index/team.css);
 
+html{
+    scrollbar-color: var(--third-bg);
+}
 
-/*=====GALLERY====*/
-
-
-
-
+body {
+    background: var(--primary-text-color);
+}
 
 
 /*==== Footer ====*/
@@ -34,7 +36,7 @@ footer {
 
 .newsletter input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--second-bg);
     border-radius: 5px 0 0 5px;
     width: 200px;
     outline: none;
@@ -43,7 +45,7 @@ footer {
 .newsletter button {
     padding: 10px;
     background: var(--third-bg);
-    border: 1px solid #ccc;
+    border: 1px solid var(--second-bg);
     border-left: none;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
@@ -107,6 +109,9 @@ footer {
     .nav-links, .footer-links {
         flex-direction: column;
     }
+	faqs{
+		display: grid;
+	}
 
 }
 
