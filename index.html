@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="keywords" content="Tecangrafical, Agência de publicidade, marketing digital, webdesign, branding">
     <title>Tecangrafical | Agência de Publicidade e Marketing Digital localizada em Luanda, Angola</title>
     <link rel="stylesheet" href="style.css">
@@ -11,130 +12,88 @@
     <meta property="og:type" content="website">
     <meta name="author" content="Emanuel da Silva - EMANUSIL">
 </head>
+
 <body>
 
-    <header>
+    <!-- Header -->
+        <header>
 
-        <nav class="navbar">
+            <nav class="navbar">
 
-            <div class="logo">
-                <a href="/index.html"><img src="./assets/img/tecangrafical--logo.png" alt="Tecangrafical">
-            </a></div>
+                <div class="logo">
+                    <a href="/index.html"><img src="./assets/img/tecangrafical--logo.png" alt="Tecangrafical">
+                </a></div>
 
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="ri-menu-3-line" id="toggle"></i>
-            </div>
-            <ul class="menu" id="menu">
-                <li><a href="" class="nav__link"><span>Quem Somos</span></a></li>
-                <li><a href="" class="nav__link"><span>Serviços</span></a></li>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="ri-menu-3-line" id="toggle"></i>
+                </div>
+
+                <ul class="menu" id="menu">
+                    <li><a href="" class="nav__link"><span>Quem Somos</span></a></li>
+                    <li><a href="" class="nav__link"><span>Serviços</span></a></li>
                 <li><a href="" class="nav__link"><span>Porfólio</span></a></li>
-                <li><a href="" class="nav__link"><span>Blog</span></a></li>
-                <li><a href="#" id="btn">Contactos</a></li>
-            </ul>
-        </nav>
+                    <li><a href="" class="nav__link"><span>Blog</span></a></li>
+                    <li><a href="#" id="btn">Contactos</a></li>
+                </ul>    
+                    <script src="./assets/js/partials/navbar.js"></script>
+            </nav>
 
-            <script>
-   document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.getElementById("menu-toggle");
-            const menu = document.getElementById("menu");
-            const icon = menuToggle.querySelector("i");
-            
-            menuToggle.addEventListener("click", function() {
-                if (menu.style.display === "flex") {
-                    menu.style.display = "none";
-                    icon.classList.remove("ri-close-large-line");
-                    icon.classList.add("ri-menu-3-line");
-                } else {
-                    menu.style.display = "flex";
-                    icon.classList.remove("ri-menu-3-line");
-                    icon.classList.add("ri-close-large-line");
-                }
-            });
-        });
-    </script>
-    </header>
+        </header>
+    <!-- end Header -->
 
-
-    <div class="hero">
-        <div class="text-content">
-            <h3>Agência Criativa</h3>
-            <h1>Trazemos a Melhor <span class="highlight">Imagem</span>
+    <!-- Hero -->
+        <section class="hero">
+        
+            <div class="text-content">
+                <h3>Agência Criativa</h3>
+                <h1>Trazemos a Melhor <span class="highlight">Imagem</span>
                 Para sua Empresa</h1>
-            <p>
-                Tecangrafical traz uma nova visão de identidade corporativa e 
-                comunicação visual, ligando negócio e criatividade, 
-                focando no design estético com qualidade.
-            </p>
-            <button id="btn">Agendar Visita</button>
-        </div><!--text-content-->
+                <p>
+                    Tecangrafical traz uma nova visão de identidade corporativa e 
+                    comunicação visual, ligando negócio e criatividade, 
+                    focando no design estético com qualidade.
+                </p>
+                <button id="btn">Agendar Visita</button>
+                <div class="tags">
+                    <span>Marketing Digital</span>
+                    <span>Branding</span>
+                    <span>Produção Audio visual</span>
+                </div>
+            </div><!--text-content-->
     
-        <div class="image">
-            <img src="./assets/img/atenas--image.png" alt="Lady Justice">
-        </div><!--image-->
+            <div class="image">
+                <img src="./assets/img/atenas--image.png" alt="Lady Justice">
+            </div><!--image-->
     
-    </div><!--hero-->
+        </section><!--.hero-->
+    <!-- end Hero -->
 
+    <!-- Status -->
+        <section class="status">
+
+            <div class="counting">
+
+                <div class="box">
+                    <div class="contador" id="contador">0</div>
+                </div><!--box-->
+                <div class="box">
+                    <div class="contador" id="contador">0</div>
+                </div><!--box-->
+                <div class="box">
+                    <div class="contador" id="contador">0</div>
+                </div><!--box-->
+
+            </div><!--counting-->
+
+        </section>
+    <!-- End Status -->
     
-    <div class="gallery">
-        <div class="gallery-title"></div><!--title-->
-        
-        <div class="figs">
-            <ul>
-                <li>
-                    <a href="">
-                        <figure>
-                            <img src='https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA0OTI3Nw&ixlib=rb-1.2.1&q=80&w=400' alt='Volcano and lava field against a stormy sky'>
-                            <figcaption>Mountains and volcanos</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <figure>
-                            <img src='https://images.unsplash.com/photo-1633621533308-8760aefb5521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjAyMQ&ixlib=rb-1.2.1&q=80&w=400' alt='Guy on a bike ok a wooden bridge with a forest backdrop'>
-                            <figcaption>Adventure getaways</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <figure>
-                            <img src='https://images.unsplash.com/photo-1633635146842-12d386e64058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400' alt='Person standing alone in a misty forest'>
-                            <figcaption>Forest escapes</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <figure>
-                            <img src='https://images.unsplash.com/photo-1568444438385-ece31a33ce78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400' alt='Person hiking on a trail through mountains while taking a photo with phone'>
-                            <figcaption>Hiking trails</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <figure>
-                            <img src='https://images.unsplash.com/photo-1633515257379-5fda985bd57a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400' alt='Street scene with person walking and others on motorbikes, all wearing masks'>
-                            <figcaption>Street scenes</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <figure>
-                            <img src='https://images.unsplash.com/photo-1633209931146-260ce0d16e22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDA1MjA5OA&ixlib=rb-1.2.1&q=80&w=400' alt='Fashionable-looking girl with blond hair and pink sunglasses'>
-                            <figcaption>Trending</figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
-        </div><!--figs-->
-    </div><!--gallery-->
+    <!-- Gallery -->
 
+    <!-- end Gallery-->
 
-
-    <div class="clients">
+    <!-- Clients -->
+    <section class="clients">
         <div class="logos__slide">
             <img src="./assets/img/clients/chindeca-logo.png" alt="">
             <img src="./assets/img/clients/govao--logo.png" alt="">
@@ -156,8 +115,19 @@
             <img src="./assets/img/clients/WB--logo.png" alt="">
             <img src="./assets/img/clients/wbs--logo.png" alt="">
         </div><!--logo-slide-->
-    </div><!--logo-->
+    </section><!--.clients-->
+    <!-- end Clients -->
 
+    <!-- About -->
+    <!-- end About -->
+
+    <!-- Team -->
+    <!-- end Team -->
+
+    <!-- Contacts -->
+    <!-- end Contacts -->
+
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="newsletter">
@@ -178,9 +148,14 @@
                 <li><a href="#">Contactos</a></li>
             </ul>
             
-        <p class="copyright">Tecangrafical © 2025. Todos Direitos Reservados.</p>
-    </div>
+            <p class="copyright">Tecangrafical © 2025. Todos Direitos Reservados.</p>
+        </div>
     </footer>
+    <!-- end Footer -->
+
+</body>
+
+</html>
 
 </body>
 </html>
