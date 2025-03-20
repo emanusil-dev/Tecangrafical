@@ -1,0 +1,33 @@
+/*==LOGOS==*/
+
+.clients{
+    background: var(--primary-bg);
+    overflow: hidden;
+    padding: 60px 0 0 0;
+    white-space: nowrap;
+    width: 100%;
+    height: 25vh;
+}
+
+.logos__slide{
+   display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.logos__slide img{
+    height: 60px;
+    margin: 0 40px;
+}
+
+.clients:hover .logos__slide{
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
