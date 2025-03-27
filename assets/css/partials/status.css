@@ -1,0 +1,36 @@
+.status {
+    background: var(--third-bg);
+    padding: 30px 30px;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--primary-bg);
+    font-family: "Inter", sans-serif;
+}
+
+.counting {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.counting h4{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.counting h6{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@media (max-width: 768px){
+    .counting{
+        display: block;
+        grid-template-columns: repeat(1 1fr);
+    }
+    .counting > div {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+}
